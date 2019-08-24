@@ -18,8 +18,22 @@ typealias Input = Request
 
 enum WebAPI {
 
+    static func call(with input: Input, _ block: @escaping (Output) -> Void) {
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { _ in
+            let response: Response = (
+                statusCode: .ok,
+                headers: [:],
+                payload: "this is a response text".data(using: .utf8)!
+            )
+
+            block(.hasResponse(response))
+        }
+    }
+
     static func call(with input: Input) {
-        // TODO
+        self.call(with: input) { _ in
+            // TODO
+        }
     }
 }
 

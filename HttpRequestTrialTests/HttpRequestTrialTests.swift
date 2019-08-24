@@ -39,4 +39,34 @@ class HttpRequestTrialTests: XCTestCase {
             XCTAssertEqual(zen.text, "this is a response text")
         }
     }
+
+    func testRequestAndResponse() {
+        let expectation = self.expectation(description: "Wait for API")
+
+//        Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { _ in
+//            expectation.fulfill()
+//        }
+
+        let input: Request = (
+            url: URL(string: "https://api.github.com/zen")!,
+            queries: [],
+            headers: [:],
+            methodAndPayload: .get
+        )
+
+        WebAPI.call(with: input) { output in
+            switch output {
+            case let .noResponse(connectionError):
+                XCTFail("\(connectionError)")
+
+            case let .hasResponse(response):
+                let errorOrZen = GitHubZen.from(response: response)
+                XCTAssertNotNil(errorOrZen.right)
+            }
+
+            expectation.fulfill()
+        }
+
+        self.waitForExpectations(timeout: 10)
+    }
 }
