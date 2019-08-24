@@ -8,6 +8,9 @@
 
 import UIKit
 
+//
+// Refer: http://www.office-matsunaga.biz/ios/description.php?id=54
+//
 class FirstViewController: UIViewController {
 
     // MARK: - IBOutlet
