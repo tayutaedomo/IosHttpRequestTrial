@@ -11,24 +11,22 @@ import XCTest
 
 class HttpRequestTrialTests: XCTestCase {
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testRequest() {
+        let input: Request = (
+            url: URL(string: "https://api.github.com/zen")!,
+            queries: [],
+            headers: [:],
+            methodAndPayload: .get
+        )
+
+        WebAPI.call(with: input)
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testResponse() {
+        let response: Response = (
+            statusCode: .ok,
+            headers: [:],
+            payload: "this is a response text".data(using: .utf8)!
+        )
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
