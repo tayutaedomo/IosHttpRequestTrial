@@ -15,6 +15,7 @@
 		E645136E2310B451000CF317 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E645136C2310B451000CF317 /* LaunchScreen.storyboard */; };
 		E64513792310B451000CF317 /* HttpRequestTrialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64513782310B451000CF317 /* HttpRequestTrialTests.swift */; };
 		E64513862310C744000CF317 /* WebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64513852310C744000CF317 /* WebAPI.swift */; };
+		E64513882310DC9F000CF317 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64513872310DC9F000CF317 /* GitHubAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		E64513782310B451000CF317 /* HttpRequestTrialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestTrialTests.swift; sourceTree = "<group>"; };
 		E645137A2310B451000CF317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E64513852310C744000CF317 /* WebAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAPI.swift; sourceTree = "<group>"; };
+		E64513872310DC9F000CF317 /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				E64513852310C744000CF317 /* WebAPI.swift */,
+				E64513872310DC9F000CF317 /* GitHubAPI.swift */,
 				E64513612310B450000CF317 /* AppDelegate.swift */,
 				E64513632310B450000CF317 /* FirstViewController.swift */,
 				E64513652310B450000CF317 /* SecondViewController.swift */,
@@ -206,6 +209,7 @@
 				E64513662310B450000CF317 /* SecondViewController.swift in Sources */,
 				E64513622310B450000CF317 /* AppDelegate.swift in Sources */,
 				E64513642310B450000CF317 /* FirstViewController.swift in Sources */,
+				E64513882310DC9F000CF317 /* GitHubAPI.swift in Sources */,
 				E64513862310C744000CF317 /* WebAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

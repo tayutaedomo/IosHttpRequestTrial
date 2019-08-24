@@ -8,13 +8,15 @@
 
 import UIKit
 
+//
+// Refer: https://qiita.com/Kuniwak/items/a972ff2ade643799d1fe
+//
 class SecondViewController: UIViewController {
+
+    // MARK: - UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
 }
-

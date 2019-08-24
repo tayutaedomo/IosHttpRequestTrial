@@ -28,5 +28,15 @@ class HttpRequestTrialTests: XCTestCase {
             headers: [:],
             payload: "this is a response text".data(using: .utf8)!
         )
+
+        let errorOrZen = GitHubZen.from(response: response)
+
+        switch errorOrZen {
+        case let .left(error):
+            XCTFail("\(error)")
+
+        case let .right(zen):
+            XCTAssertEqual(zen.text, "this is a response text")
+        }
     }
 }
