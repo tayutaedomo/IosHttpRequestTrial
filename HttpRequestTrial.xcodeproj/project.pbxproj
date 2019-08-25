@@ -16,6 +16,8 @@
 		E64513792310B451000CF317 /* HttpRequestTrialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64513782310B451000CF317 /* HttpRequestTrialTests.swift */; };
 		E64513862310C744000CF317 /* WebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64513852310C744000CF317 /* WebAPI.swift */; };
 		E64513882310DC9F000CF317 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64513872310DC9F000CF317 /* GitHubAPI.swift */; };
+		E645138B23110BEF000CF317 /* GitHubApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645138923110BD9000CF317 /* GitHubApiTests.swift */; };
+		E645138D23110C3D000CF317 /* WebApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645138C23110C3D000CF317 /* WebApiTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		E645137A2310B451000CF317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E64513852310C744000CF317 /* WebAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAPI.swift; sourceTree = "<group>"; };
 		E64513872310DC9F000CF317 /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
+		E645138923110BD9000CF317 /* GitHubApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GitHubApiTests.swift; path = HttpRequestTrialTests/GitHubApiTests.swift; sourceTree = SOURCE_ROOT; };
+		E645138C23110C3D000CF317 /* WebApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebApiTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				E64513782310B451000CF317 /* HttpRequestTrialTests.swift */,
+				E645138C23110C3D000CF317 /* WebApiTests.swift */,
+				E645138923110BD9000CF317 /* GitHubApiTests.swift */,
 				E645137A2310B451000CF317 /* Info.plist */,
 			);
 			path = HttpRequestTrialTests;
@@ -219,6 +225,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E64513792310B451000CF317 /* HttpRequestTrialTests.swift in Sources */,
+				E645138D23110C3D000CF317 /* WebApiTests.swift in Sources */,
+				E645138B23110BEF000CF317 /* GitHubApiTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
